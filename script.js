@@ -16,44 +16,68 @@ function writePassword() {
      var numericLetters = confirm  ("Do you want numerics in your password?");
      var specialLetters = confirm  ("Do you want special letters in your password?");
 
-     let passwordString = [];
+     var passwordString = "";
    
     if (lowerCase == false && upperCase == false && numericLetters == false && specialLetters == false){
         alert ("Please select at least one type of character. Please start again.");
     } 
     
-    if (lowerCase == true) {
-      passwordString.push(lowerCasedCharacters);
-    }
+    // if (lowerCase == true) {
+    //   passwordString = passwordString.concat(lowerCasedCharacters);
+    // };
     
-    if (upperCase == true){
-      passwordString.push(upperCasedCharacters);
-    }
+    // if (upperCase == true){
+    //   passwordString = passwordString.concat(upperCasedCharacters);
+    // };
 
-    if(numericLetters == true) {
-      passwordString.push(numericCharacters);
-    }
+    // if(numericLetters == true) {
+    //   passwordString = passwordString.concat(numericCharacters);
+    // };
 
-    if(specialLetters == true) {
-      passwordString.push(specialCharacters);
-    }
-    
-    console.log(passwordString);
+    // if(specialLetters == true) {
+    //   passwordString = passwordString.concat(specialCharacters);
+    // };
+
+    // console.log(passwordString);
 
    for (var i = 0 ; i < NumberOfCharacters; i++) {
-       var password = passwordString[Math.floor(Math.random()* NumberOfCharacters)];
 
-     console.log(password);
-    };
+        if (lowerCase && passwordString.length < NumberOfCharacters) {
+            passwordString = passwordString += lowerCasedCharacters[Math.floor(Math.random() * lowerCasedCharacters.length)];
+        }
+  
+        if (upperCase && passwordString.length < NumberOfCharacters) {
+           passwordString = passwordString += upperCasedCharacters[Math.floor(Math.random() * upperCasedCharacters.length)];
+        }
+
+        if (numericLetters && passwordString.length < NumberOfCharacters) {
+          passwordString = passwordString += numericCharacters[Math.floor(Math.random() * numericCharacters.length)];
+        }
+
+        if (specialLetters && passwordString.length < NumberOfCharacters) {
+           passwordString = passwordString += specialCharacters[Math.floor(Math.random() * specialCharacters.length)];
+        } 
+    
+      };
+
+       var password = passwordString.split('').sort(function(
+
+       ) {return 0.5-Math.random()}).join('');
+      
+       console.log(password);
+
+       document.getElementById("password").innerHTML = password;
    }
-  // else {
-  //  alert('Your password should be between 8 and 128 characters.');
- // }
+   else {
+    alert('Your password should be between 8 and 128 characters.');
+  }
 
-  // var password = generatePassword();
-  // var passwordText = document.querySelector("#password");
 
-  // passwordText.value = password;
+
+// var password = generatePassword();
+// var passwordText = document.querySelector("#password");
+
+// passwordText.value = password;
 
 }
 
