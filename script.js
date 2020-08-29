@@ -16,11 +16,22 @@ function writePassword() {
      var numericLetters = confirm  ("Do you want numerics in your password?");
      var specialLetters = confirm  ("Do you want special letters in your password?");
    
-     var password = Math.random() * NumberOfCharacters;
-      console.log(password);
+    if (lowerCase) {
+      for (var i = 0 ; i < NumberOfCharacters; i++) {
+        var password = lowerCasedCharacters[Math.floor(Math.random()* lowerCasedCharacters.length)];
 
-  } else {
-    alert('Your password should be between 8 and 128 characters.')
+        console.log(password)
+      };
+    } else if (upperCase) {
+      for (var i = 0 ; i < NumberOfCharacters; i++) {
+        var password = upperCasedCharacters[Math.floor(Math.random()* lowerCasedCharacters.length)];
+
+        console.log(password)
+      
+
+  }
+   else {
+    alert('Your password should be between 8 and 128 characters.');
   }
 
   // var password = generatePassword();
@@ -28,9 +39,8 @@ function writePassword() {
 
   // passwordText.value = password;
 
-  
-
 }
+  }
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
