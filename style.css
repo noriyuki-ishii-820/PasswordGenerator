@@ -10,11 +10,16 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+  background-image:url('circle-blues.png');
 }
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  /* background-color: #f9fbfd; */
+}
+
+h1 {
+  color:white;
 }
 
 .wrapper {
@@ -74,7 +79,7 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: rgb(65, 179, 214);
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
@@ -119,6 +124,11 @@ button[disabled] {
 }
 
 @media (max-width: 690px) {
+  
+   {
+    text-align:center;
+
+  }
   .btn {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
