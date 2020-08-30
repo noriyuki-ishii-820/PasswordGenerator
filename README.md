@@ -1,27 +1,23 @@
 # noriyuki-ishii-820-usydBootcamp-week3-homework-Noriyuki
 
+## PASSWORD GENERATOR 
 
+This application generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by JavaScript codes. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
 
+This application was made part of the University of Sydney's Bootcamp assignment. 
 
-psudo code:
-1) open alert - welcome to the password generator
-2) Questions for password criteria
-    - Length (8 to 128)
-    - whether to include lowercase
-    - whether to include uppercase
-    - whether to include numeric
-    - whether to include special characters
-3) then the password is displayed. 
+## Tech used
 
+- HTML
+- CSS
+- JavaScript
 
---Assignment---
+## Deployment
 
+please access the following URL:
 
-# 03 JavaScript: Password Generator
+https://noriyuki-ishii-820.github.io/noriyuki-ishii-820-usydBootcamp-week3-homework-Noriyuki/
 
-Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
-
-If you are unfamiliar with special characters, take a look at [some examples](https://www.owasp.org/index.php/Password_special_characters).
 
 ## User Story
 
@@ -49,19 +45,14 @@ WHEN all prompts are answered
 THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
-```
 
-The following image demonstrates the application functionality:
+## Psudo Code Used (for Reference)
 
-![password generator demo](./Assets/03-javascript-homework-demo.png)
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+1) open alert - welcome to the password generator
+2) Questions for password criteria
+    - Length (8 to 128)
+    - whether to include lowercase
+    - whether to include uppercase
+    - whether to include numeric
+    - whether to include special characters
+3) then the password is displayed. 
