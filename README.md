@@ -16,3 +16,18 @@ please access the following URL:
 
 https://noriyuki-ishii-820.github.io/PasswordGenerator/
 
+## Screenshots
+
+1) the UI provides the user the button to start the password generation.
+![](password1.png)
+
+2) with the criteria the user selected (numeric, lowercase, uppercase and special letters) the application would generate a password.
+![](password2.png)
+
+## License
+
+MIT
+
+## Contact
+
+nishii.dev.syd@gmail.com
